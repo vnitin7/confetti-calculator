@@ -1,0 +1,149 @@
+.calculator {
+  width: 800px;
+  margin: 150px auto;
+  
+  border-radius: 20px;
+
+  background-color: #f0f0f0;
+  box-shadow: 20px 20px 20px #3b3b3b;
+}
+
+
+.dark-mode .calculator {
+  background-color: #111; /* Dark background color */
+}
+
+.dark-mode {
+  background-color: #111;
+  color: #fff;
+}
+
+.display {
+  background-color: #444;
+  color: white;
+  font-size: 2em;
+  text-align: right;
+  padding: 40px;
+  position: relative;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.dark-mode .display {
+  background-color: #333; /* Dark background color */
+}
+
+
+
+
+.circle{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #ff0000;
+  position: absolute;
+  left: 3%;
+  top: 15%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 0px 20px #3b3b3b;
+}
+
+.circle1{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #FFA500;
+  position: absolute;
+  left: 6.5%;
+  top: 15%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 0px 20px #3b3b3b;
+}
+
+.circle2{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #008000;
+  position: absolute;
+  left: 10%;
+  top: 15%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 0px 20px #3b3b3b;
+}
+.history-icon{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: absolute;
+  left: 3%;
+  top: 80%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 0px 20px #3b3b3b;
+}
+
+
+
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  
+}
+
+button {
+  background-color:#3b3b3b;
+  color: white;
+  font-size: 1.5em;
+  border: none;
+  margin: 1.4px;
+  padding: 20px;
+  cursor: pointer;
+  
+}
+
+.round{
+   border-bottom-left-radius: 100px;
+  
+}
+
+button.double {
+  grid-column: span 2;
+  background-color:  #555 ;
+}
+
+button.operator {
+  background-color: #FFA500;
+  color: white;
+}
+
+button.operation{
+  background-color:  #555 ;
+}
+
+button.operator:hover {
+  background: #ff0;
+  color: #000;
+}
+
+button:hover {
+  background: #777;
+}
+
+button:active {
+  background-color: #777;
+}
+
+.mode {
+  position: absolute;
+  top: 53%;
+  left: 3%;
+}
+
+.mode button {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+}
